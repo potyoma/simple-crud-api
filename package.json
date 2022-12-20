@@ -1,0 +1,23 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "Simple web API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/potyoma/simple-crud-api.git"
+  },
+  "keywords": [
+    "api",
+    "ts"
+  ],
+  "author": "potyoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potyoma/simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/potyoma/simple-crud-api#readme"
+}
