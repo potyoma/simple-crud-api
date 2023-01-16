@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Simple web API",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "test"
+    "start:dev": "nodemon",
+    "start:prod": "tsc && node ./dist/index.js",
+    "start:multi": "tsc && node ./dist/index.js --cluster=enable",
+    "test": "jest --silent --verbose --config ./test/jest.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/potyoma/simple-crud-api/issues"
   },
-  "homepage": "https://github.com/potyoma/simple-crud-api#readme"
+  "homepage": "https://github.com/potyoma/simple-crud-api#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/jest": "^29.2.5",
+    "@types/supertest": "^2.0.12",
+    "dotenv": "^16.0.3",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5"
+  }
 }
